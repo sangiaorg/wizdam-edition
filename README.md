@@ -1,4 +1,4 @@
-# 📚 OJS 2.4.8.4 WizdamID Edition
+# 📚 OJS 2.4.8.4 Wizdam Edition
 
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://php.net)
 [![License](https://img.shields.io/badge/License-GPL%20v3-green.svg)](LICENSE)
