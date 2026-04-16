@@ -15,7 +15,7 @@
 👉 **[Download Latest Release (v1.0.0)](https://github.com/Rochmady/ojs-2485-wizdamid-edition/releases/latest)**
 
 ### 🛠️ Installation Steps
-1. **Download** the `ojs-2484-wizdamid-edition.tar.gz` from releases
+1. **Download** the `ojs-2485-wizdamid-edition.tar.gz` from releases
 2. **Extract** to your web directory:
    ```bash
    tar -xzf ojs-2485-wizdamid-edition.tar.gz
