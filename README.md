@@ -1,34 +1,34 @@
-# 📚 OJS 2.4.8.4 Wizdam Edition
+# 📚 OJS 2.4.8.5 Wizdam Edition
 
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://php.net)
 [![License](https://img.shields.io/badge/License-GPL%20v3-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-v1.0.0-orange.svg)](https://github.com/Rochmady/ojs-2484-wizdamid-edition/releases)
+[![Version](https://img.shields.io/badge/Version-v1.0.0-orange.svg)](https://github.com/Rochmady/ojs-2485-wizdamid-edition/releases)
 [![Warnings](https://img.shields.io/badge/PHP%20Warnings-0-brightgreen.svg)](#zero-warning-achievement)
 
 ## 🎯 Zero-Warning, Production-Ready OJS for Modern PHP
 
-**OJS 2.4.8.4 WizdamID Edition** is a completely refactored version of Open Journal Systems 2.4.8.4, engineered for 100% PHP 7.4+ compatibility with **zero warnings**.
+**OJS 2.4.8.5 WizdamID Edition** is a completely refactored version of Open Journal Systems 2.4.8.5, engineered for 100% PHP 7.4+ compatibility with **zero warnings**.
 
 ## 🚀 Quick Download & Installation
 
 ### 📦 Direct Download
-👉 **[Download Latest Release (v1.0.0)](https://github.com/Rochmady/ojs-2484-wizdamid-edition/releases/latest)**
+👉 **[Download Latest Release (v1.0.0)](https://github.com/Rochmady/ojs-2485-wizdamid-edition/releases/latest)**
 
 ### 🛠️ Installation Steps
 1. **Download** the `ojs-2484-wizdamid-edition.tar.gz` from releases
 2. **Extract** to your web directory:
    ```bash
-   tar -xzf ojs-2484-wizdamid-edition.tar.gz
+   tar -xzf ojs-2485-wizdamid-edition.tar.gz
    ```
 3. **Set proper permissions:**
    ```bash
-   chmod -R 755 ojs-2484-wizdamid-edition/
-   chmod -R 777 ojs-2484-wizdamid-edition/cache/
-   chmod -R 777 ojs-2484-wizdamid-edition/files/
+   chmod -R 755 ojs-2485-wizdamid-edition/
+   chmod -R 777 ojs-2485-wizdamid-edition/cache/
+   chmod -R 777 ojs-2485-wizdamid-edition/files/
    ```
 4. **Visit installation page:**
    ```
-   http://yourdomain.com/ojs-2484-wizdamid-edition/install
+   http://yourdomain.com/ojs-2485-wizdamid-edition/install
    ```
 
 ## ✨ Key Features
@@ -42,7 +42,7 @@
 
 ## 📊 Zero-Warning Achievement
 
-| Component | Original OJS 2.4.8.4 | WizdamID Edition | Status |
+| Component | Original OJS 2.4.8.5 | WizdamID Edition | Status |
 |-----------|----------------------|------------------|---------|
 | **Core Classes** | 15 warnings | 0 warnings | ✅ **Fixed** |
 | **Plugin System** | 25 warnings | 0 warnings | ✅ **Fixed** |
@@ -80,7 +80,7 @@
 
 ## 🏆 Success Stories
 
-> *"OJS 2.4.8.4 WizdamID Edition eliminated all our PHP warnings and provided a smooth installation experience. Highly recommended for modern hosting environments."*  
+> *"OJS 2.4.8.5 WizdamID Edition eliminated all our PHP warnings and provided a smooth installation experience. Highly recommended for modern hosting environments."*  
 > — **University Library Administrator**
 
 > *"The zero-warning guarantee and enhanced stability made our journal platform migration seamless. Professional quality work."*  
@@ -107,8 +107,8 @@
 
 - **📖 Installation Guide:** Detailed setup instructions included
 - **🔧 Troubleshooting:** Common issues and solutions documented
-- **🆘 Issues:** [GitHub Issues](https://github.com/Rochmady/ojs-2484-wizdamid-edition/issues) for bug reports
-- **💬 Discussions:** [GitHub Discussions](https://github.com/Rochmady/ojs-2484-wizdamid-edition/discussions) for questions
+- **🆘 Issues:** [GitHub Issues](https://github.com/Rochmady/ojs-2485-wizdamid-edition/issues) for bug reports
+- **💬 Discussions:** [GitHub Discussions](https://github.com/Rochmady/ojs-2485-wizdamid-edition/discussions) for questions
 - **🌐 Community:** [OJS Community Forum](https://forum.pkp.sfu.ca/) for general OJS support
 
 ## 📄 License
@@ -133,7 +133,7 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 
 ## 🎉 Ready for Production!
 
-**OJS 2.4.8.4 WizdamID Edition** is ready for production deployment on modern PHP hosting environments. Download now and experience zero-warning OJS installation!
+**OJS 2.4.8.5 WizdamID Edition** is ready for production deployment on modern PHP hosting environments. Download now and experience zero-warning OJS installation!
 
 **Made with ❤️ by the WizdamID Team**
 
