@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * @file plugins/importexport/medra/locale/tr_TR/common.xml
+  *
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Shared localization strings
+  -->
+ 
+<locale name="tr_TR" full_name="Türkçe">
+	<message key="plugins.importexport.common.settings">Ayarlar</message>
+
+	<message key="plugins.importexport.common.settings.form.password">Şifre</message>
+	<message key="plugins.importexport.common.settings.form.passwordRequired">Lütfen bir şifre giriniz.</message>
+	
+	<message key="plugins.importexport.common.register">Kayıt</message>
+	<message key="plugins.importexport.common.register.success">Kayıt Başarılı!</message>
+	<message key="plugins.importexport.common.update">Güncelle</message>
+	<message key="plugins.importexport.common.export">Veriyi Dışa Aktar</message>
+	<message key="plugins.importexport.common.export.issues">Export specific issues</message>
+	<message key="plugins.importexport.common.export.articles">Export specific articles</message>
+	<message key="plugins.importexport.common.export.selectArticle">Makaleleri Seç</message>
+	<message key="plugins.importexport.common.export.noArticles">Şu halde hiç bir makaleye DOI atanmadı.</message>
+ 
+ 
+	<message key="plugins.importexport.common.cliError">HATA</message>
+</locale>

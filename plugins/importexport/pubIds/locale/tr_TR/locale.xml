@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/importexport/pubIds/locale/tr_TR/locale.xml
+  *
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+ 
+<locale name="tr_TR" full_name="Türkçe">
+	<!-- plugin -->
+	<message key="plugins.importexport.pubIds.displayName">Genel Belirleyici XML Eklentisi</message>
+	<message key="plugins.importexport.pubIds.description">Genel belirleyici ithal ve ihracı</message>
+
+	<message key="plugins.importexport.pubIds.cliUsage">Usage: {$scriptName} {$pluginName} [command] ...
+Commands:
+	import [xmlFileName] [journal_path] [user_name]
+	export [xmlFileName] [journal_path] issues [issueId1] [issueId2] ...
+	export [xmlFileName] [journal_path] issue [issueId]</message>
+
+	<message key="plugins.importexport.pubIds.export">Genel belirleyici ihracı</message>
+	<message key="plugins.importexport.pubIds.export.forIssues">Genel belirleyici ihracı</message>
+	<message key="plugins.importexport.pubIds.export.selectIssue">Sayı Seç</message>
+	<message key="plugins.importexport.pubIds.import">GEnel Belirleyicileri Al</message>
+	<message key="plugins.importexport.pubIds.import.results">Sonuçları Al</message>
+	<message key="plugins.importexport.pubIds.import.errors">Veri Alma Hatası</message>
+	<message key="plugins.importexport.pubIds.import.success">Veri Alma Başarılı</message>
+	<message key="plugins.importexport.pubIds.import.success.description">Aşağıda listelenen genel belirleyiciler başarılı bir şekilde alındı.</message>
+	<message key="plugins.importexport.pubIds.cliError">HATA:</message>
+	<message key="plugins.importexport.pubIds.cliError.unknownJournal">"{$journalPath}"  adlı belirli dergi yolu açık değil.</message>
+	<message key="plugins.importexport.pubIds.cliError.unknownUser">"{$userName}" adlı belirli üye açık değil.</message>
+	<message key="plugins.importexport.pubIds.cliError.issueNotFound">Belirli sayı numarası "{$issueId}" ile herhangi bir sayı eşlenemedi.</message>
+	<message key="plugins.importexport.pubIds.cliError.couldNotWrite">"{$fileName}" dosyasına yazılamadı.</message>
+</locale>

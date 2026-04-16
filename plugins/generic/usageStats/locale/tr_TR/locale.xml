@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/usageStats/locale/tr_TR/locale.xml
+  *
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="tr_TR" full_name="Türkçe">
+	<message key="plugins.generic.usageStats.settings.logging">Erişim günlüğü seçenekleri</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles">Günlük dosyaları oluştur</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex">Günlükleri düzenli olarak ayrıştır.</message>
+	<message key="plugins.generic.usageStats.settings.saved">Kullanım istatistikleri eklentisi ayarları kaydedildi</message>
+	<message key="plugins.generic.usageStats.settings.dataPrivacyOption">Veri gizliliği seçeneği</message>
+	<message key="plugins.generic.usageStats.settings.dataPrivacyOption.requirements">Bu seçeneği aktif edebilmek için dosyanın nereye kaydedileceğinin belirlenmiş olması gerekir: config.inc.php dosyasının '[usageSats]' kısmında  'salt_filepath' değişkenini tanımlayınız. Yolu gösterilen dosya açık ve web kullanıcısına yazma yetkisi verilmiş olmalıdır. Bu eklentinin seçeneklerinin gereklilikleri konusunda daha fazla bilgi için eklentinin "BENİOKU" dosyasına bakınız.</message>
+	<message key="plugins.generic.usageStats.settings.dataPrivacyCheckbox">Veri gizliliğine riayet ediniz</message>
+	
+	<message key="plugins.generic.usageStats.usageStatsLoaderName">Kullanım istatistikleri dosya yükleyici görevi</message>
+	<message key="plugins.generic.usageStats.openFileFailed">{$file} dosyası açık olamayacağından dolayı reddedildi.</message>
+	<message key="plugins.generic.usageStats.loadDataError">{$file} dosyasından çıkarılan veriler çağrılamadı. Hata: {$error}. Dosya yeniden ortama taşındı.</message>
+	<message key="plugins.generic.usageStats.displayName">Kullanım İstatisitikleri</message>
+	<message key="plugins.generic.usageStats.pluginDisabled">Kullanım istatistikleri eklentisi kapatıldı. Herhangi bir işlem kaydedilmeyecektir.</message>
+	<message key="plugins.generic.usageStats.processingPathNotEmpty">{$directory} dizini boş değil. Bu bir önceki hatalı işlemi veya eş zamanlı gerçekleştirilmeye çalışılan başka bir işlemi gösterir. Eğer scheduledTasksAutoStage.xml uygulamasını da kullanacaksınız bu süreç otomatik olarak yeniden yürütülecektir. Aksi halde işlem dizinindeki sahipsiz dosyaları ortam dizinine manuel olarak taşımanız gerekir.</message>
+	<message key="plugins.generic.usageStats.noCounterBotList">COUNTER sayacı listesi bulunamadı veya birden fazla liste mevcut.  {$file} dosyası için işlem yapılamadı.</message>
+	<message key="plugins.generic.usageStats.failedCounterBotList">{$botlist} adlı COUNTER sayaç listesi açılamadı. {$file} dosyası için işlem yapılamadı.</message>
+	
+	<message key="plugins.reports.usageStats.report.displayName">OJS kullanım istatisitkleri raporu</message>
+	<message key="plugins.reports.usageStats.report.description">ADS varsayılan kullanım istatistikleri raporu (COUNTER uyumlu)</message>
+	
+	<message key="plugins.reports.usageStats.optout.displayName">Kullanım İstatistikleri Gizlilik Bilgisi</message>
+	<message key="plugins.reports.usageStats.optout.description">Kullanım İstatistikleri Gizlilik Bilgisi</message>
+	<message key="plugins.generic.usageStats.optout.title">Kullanım İstatistikleri Bilgisi</message>
+	<message key="plugins.generic.usageStats.optout.shortDesc"><![CDATA[Biz anonim kullanım istatistikleri günlüğünü tutuyoruz. Lütfen detay için <a href="{$privacyInfo}">gizlilik bilgisini</a> okuyunuz.]]></message>
+
+	<message key="plugins.generic.usageStats.optin">İzinli (Opt In)</message>
+	<message key="plugins.generic.usageStats.optout">İzinsiz (Opt Out)</message>
+
+	<message key="plugins.reports.usageStats.metricType">ADS/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Açık Dergi Sistemleri istatistikleri (COUNTER uyumlu)</message>
+	<message key="plugins.generic.usageStats.settings.optionalColumns">İsteğe bağlı istatistik bilgisi</message>
+	<message key="plugins.generic.usageStats.settings.archives">Arşivler</message>
+	<message key="plugins.generic.usageStats.settings.compressArchives">Sıkıştırılmış arşivler</message>
+</locale>
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/sehl/locale/ru_RU/locale.xml
+  *
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the ru_RU (Русский) locale.
+  * With updates from Pavel Pisklakov (revising translation). 
+  -->
+ 
+<locale name="ru_RU" full_name="Русский">
+	<message key="plugins.generic.sehl.name">Плагин «SEHL»</message>
+	<message key="plugins.generic.sehl.description">Этот плагин реализует подсветку для поисковых машин (Search Engine HighLighting, SEHL), таким образом, когда поисковая машина находит статью HTML, искомые ключевые слова будут подсвечены.</message>
+</locale>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/importexport/native/locale/tr_TR/locale.xml
+  *
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the tr_TR (Türkçe) locale.
+  *
+  -->
+ 
+<locale name="tr_TR" full_name="Türkçe">
+	<message key="plugins.importexport.native.displayName"><![CDATA[Makaleler & Sayılar XML Eklentisi]]></message>
+	<message key="plugins.importexport.native.description">Makale ve sayıların ihraç ve ithali</message>
+
+	<message key="plugins.importexport.native.cliUsage"><![CDATA[Kullanımı: {$scriptName} {$pluginName} [komut] ...
+Komutlar:
+	import [xmlFileName] [journal_path] [user_name] ...
+	export [xmlFileName] [journal_path] articles [articleId1] [articleId2] ...
+	export [xmlFileName] [journal_path] article [articleId]
+	export [xmlFileName] [journal_path] issues [issueId1] [issueId2] ...
+	export [xmlFileName] [journal_path] issue [issueId]
+
+Verilerin sisteme alınması için XML dosyasının kök noktasına göre ek parametreler gerekir. Aşağıdaki örnekleri izleyiniz.
+
+Eğer kök nokta <article> veya <articles>, ise aşağıdaki gibi ek parametreler gerekir.
+Aşağıdaki biçimler kabul edilir:
+
+{$scriptName} {$pluginName} import [xmlFileName] [journal_path] [user_name]
+	issue_id [issueId] section_id [sectionId]
+
+{$scriptName} {$pluginName} import [xmlFileName] [journal_path] [user_name]
+	issue_id [issueId] section_name [name]
+
+{$scriptName} {$pluginName} import [xmlFileName] [journal_path]
+	issue_id [issueId] section_abbrev [abbrev]]]></message>
+	<message key="plugins.importexport.native.export">Veri İhracı</message>
+	<message key="plugins.importexport.native.export.issues">Sayıları İhraç Et</message>
+	<message key="plugins.importexport.native.export.sections">Bölümleri İihraç Et</message>
+	<message key="plugins.importexport.native.export.articles">Makaleleri İhraç Et</message>
+
+	<message key="plugins.importexport.native.selectIssue">Sayı Seçin</message>
+	<message key="plugins.importexport.native.selectArticle">Makale Seç</message>
+
+	<message key="plugins.importexport.native.import.articles">Makaleleri İthal Et</message>
+	<message key="plugins.importexport.native.import.articles.description">Gönderdiğiniz dosya birden fazla sayıda makale içeriyor. Makaleleri sisteme yüklemeden önce hangi sayı ve bölüme yükleyeceğinizi seçmeniz gerekir. Eğer tümü aynı sayı ve bölüme yüklenmeyecek ise, ya makaleleri ayrı dosyalara ayırın, ya da sisteme yükledikten sonra ait oldukları bölüm ve sayıya taşıyın.</message>
+
+	<message key="plugins.importexport.native.import">Veri İhraç Et</message>
+	<message key="plugins.importexport.native.import.description"><![CDATA[Bu eklenti sisteme "native.dtd" belge tanım tipi kullanan XML dosyalarından veri alış verişi için kullanılır. Desteklediği kök noktaları &lt;article&gt;, &lt;articles&gt;, &lt;issue&gt;, ve &lt;issues&gt; olarak sıralanır.]]></message>
+
+	<message key="plugins.importexport.native.import.error">İhraç Hatası</message>
+	<message key="plugins.importexport.native.import.error.description">Veri alma sırasında hata oluştu. Alınacak dosyanın tanımlanan özelliklere tümü ile uyup, uymadığını kontrol ediniz. Hataların özgün nedenleri aşağıda sıralanmıştır.</message>
+
+	<message key="plugins.importexport.native.cliError">HATA:</message>
+	<message key="plugins.importexport.native.error.unknownUser">Tanımlanan "{$userName}" ile kullanıcı kayıtlı değildir.</message>
+	<message key="plugins.importexport.native.error.unknownJournal">Belirtilen "{$journalPath}" sistemde bulunmayan bir dizin.</message>
+	<message key="plugins.importexport.native.export.error.couldNotWrite">"{$fileName}" dosyasına yazamıyorum.</message>
+	<message key="plugins.importexport.native.export.error.sectionNotFound">Tanımlanan "{$sectionIdentifier}" ile tanımlı bölüm yok.</message>
+	<message key="plugins.importexport.native.export.error.issueNotFound">"{$issueId}" tanımı ile sayı bulamadım.</message>
+	<message key="plugins.importexport.native.export.error.articleNotFound">"{$articleId}" tanımı ile makale bulamadım.</message>
+	<message key="plugins.importexport.native.import.error.unsupportedRoot">Eklenti "{$rootName}" adında bir kök noktayı desteklememektedir. Lütfen dosyanızın kurgusunu kontrol ederek, yeniden deneyiniz.</message>
+
+	<message key="plugins.importexport.native.import.error.titleMissing">Bir sayı için başlık yok.</message>
+	<message key="plugins.importexport.native.import.error.defaultTitle">Eksik başlık</message>
+	<message key="plugins.importexport.native.import.success">Veri alma başarılı</message>
+	<message key="plugins.importexport.native.import.success.description">Veri alma başarılı. Başarı ile sisteme eklenen yazılar aşağıda listelenmiştir.</message>
+	<message key="plugins.importexport.native.import.error.invalidBooleanValue">Geçersiz bir boolean değeri "{$value}" belirtildi. "Lütfen "true" veya "false" kullanın.</message>
+	<message key="plugins.importexport.native.import.error.invalidDate">Geçersiz bir tarih "{$value}" belirtildi.</message>
+	<message key="plugins.importexport.native.import.error.unknownEncoding">Veri bilinmeyen bir kodlama türü "{$type}" kullanarak gömüldü.</message>
+	<message key="plugins.importexport.native.import.error.unknownSuppFileType">Bilinmeyen bir ek dosya türü "{$suppFileType}" belirtildi.</message>
+	<message key="plugins.importexport.native.import.error.couldNotCopy">Belirtilen URL "{$url}" yerel dosyaya kopyalanamadı.</message>
+	<message key="plugins.importexport.native.import.error.duplicatePublicGalleyId">İçe aktarılan {$publicId} numaralı dizgi genel ID'si , "{$articleTitle}" adlı aynı makale için başka bir dizgi için zaten kullanılıyor.</message>
+	<message key="plugins.importexport.native.import.error.duplicatePublicSuppFileId">İçeri aktarılan "{$suppFileTitle}" adlı ek dosya için verilen genel ID, hali hazırda "{$otherSuppFileTitle}" adlı başka bir ek dosya tarafından aynı makale için kullanılmkatadır.</message>
+	<message key="plugins.importexport.native.import.error.duplicatePublicArticleId">İçeri aktarılan "{$articleTitle}" adlı makale için verilen genel ID, hali hazırda "{$otherArticleTitle}" adlı başka bir makale için kullanılmaktadır.</message>
+</locale>

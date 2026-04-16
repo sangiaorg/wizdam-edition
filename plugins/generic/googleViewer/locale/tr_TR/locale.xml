@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/googleViewer/locale/tr_TR/locale.xml
+  *
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="tr_TR" full_name="Türkçe">
+	<message key="plugins.generic.googleViewer.name">Google gömülü görüntüleme eklentisi</message>
+	<message key="plugins.generic.googleViewer.description"><![CDATA[Bu eklenti makale görüntüleme sayfasında Google Docs Viewer gömülü PDF hizmetini sunar.]]></message>
+</locale>
