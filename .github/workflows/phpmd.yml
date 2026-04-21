@@ -1,0 +1,89 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# PHPMD is a spin-off project of PHP Depend and
+# aims to be a PHP equivalent of the well known Java tool PMD.
+# What PHPMD does is: It takes a given PHP source code base
+# and look for several potential problems within that source.
+# These problems can be things like:
+#   Possible bugs
+#   Suboptimal code
+#   Overcomplicated expressions
+#   Unused parameters, methods, properties
+# More details at https://phpmd.org/
+
+name: PHPMD
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "master" ]
+  schedule:
+    - cron: '21 16 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  PHPMD:
+    name: Run PHPMD scanning
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read # for checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@aa1fe473f9c687b6fb896056d771232c0bc41161
+        with:
+          coverage: none
+          tools: phpmd
+          ini-values: memory_limit=-1
+
+      # Membuat direktori untuk menampung hasil scan bertahap
+      - name: Create results directory
+        run: mkdir -p results-phpmd
+
+      # TAHAP 1: Scan Core OJS (Classes, Controllers, Pages)
+      - name: PHPMD Stage 1 - Core Logic
+        run: phpmd classes,controllers,pages sarif cleancode,codesize,design,naming,unusedcode --reportfile results-phpmd/core.sarif
+        continue-on-error: true
+
+      # TAHAP 2: Scan Plugins (Area yang biasanya sangat berantakan)
+      - name: PHPMD Stage 2 - Plugins
+        run: phpmd plugins sarif cleancode,codesize,design,naming,unusedcode --reportfile results-phpmd/plugins.sarif
+        continue-on-error: true
+
+      # TAHAP 3: Scan PKP Library (Modifikasi utama Anda)
+      - name: PHPMD Stage 3 - Lib Folder
+        run: phpmd lib sarif cleancode,codesize,design,naming,unusedcode --reportfile results-phpmd/lib.sarif
+        continue-on-error: true
+
+      # TAHAP 4: Scan Folder Library Tambahan
+      - name: PHPMD Stage 4 - Library Folder
+        run: phpmd library sarif cleancode,codesize,design,naming,unusedcode --reportfile results-phpmd/library.sarif
+        continue-on-error: true
+
+      # PROOF STEP: Cetak ringkasan teks ke Log Actions agar Anda bisa melihat bukti scanning
+      - name: Final Proof (Show Issues in Log)
+        run: |
+          echo "=== RINGKASAN TEMUAN UTANG TEKNIS (TEXT MODE) ==="
+          phpmd classes,controllers,pages,plugins text codesize,unusedcode --exclude cache/ | head -n 50
+          echo "... (Hanya menampilkan 50 baris pertama agar log tidak kepanjangan) ..."
+
+      # Upload semua file SARIF yang dihasilkan dari setiap tahap
+      - name: Upload all analysis results to GitHub
+        uses: github/codeql-action/upload-sarif@v4
+        continue-on-error: true
+        if: always()
+        with:
+          # Kita mengunggah seluruh folder yang berisi file-file SARIF
+          sarif_file: results-phpmd
+          wait-for-processing: true
