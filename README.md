@@ -7,7 +7,7 @@
 
 ## 🎯 Zero-Warning, Production-Ready OJS for Modern PHP
 
-**OJS 2.4.8.5 WizdamID Edition** is a completely refactored version of Open Journal Systems 2.4.8.5, engineered for 100% PHP 7.4+ compatibility with **zero warnings**.
+**OJS 2.4.8.5 Sangia Edition** is a completely refactored version of Open Journal Systems 2.4.8.5, engineered for 100% PHP 7.4+ compatibility with **zero warnings**.
 
 ## 🚀 Quick Download & Installation
 
@@ -42,7 +42,7 @@
 
 ## 📊 Zero-Warning Achievement
 
-| Component | Original OJS 2.4.8.5 | WizdamID Edition | Status |
+| Component | Original OJS 2.4.8.5 | Sangia Edition | Status |
 |-----------|----------------------|------------------|---------|
 | **Core Classes** | 15 warnings | 0 warnings | ✅ **Fixed** |
 | **Plugin System** | 25 warnings | 0 warnings | ✅ **Fixed** |
@@ -58,7 +58,7 @@
 - **Memory:** 256MB+ PHP memory limit
 - **Storage:** 500MB+ disk space
 
-## 🎨 What's New in WizdamID Edition
+## 🎨 What's New in Sangia Edition
 
 ### Enhanced Installation Experience
 - **Modern UI:** Futuristic, responsive installation interface
@@ -80,7 +80,7 @@
 
 ## 🏆 Success Stories
 
-> *"OJS 2.4.8.5 WizdamID Edition eliminated all our PHP warnings and provided a smooth installation experience. Highly recommended for modern hosting environments."*  
+> *"OJS 2.4.8.5 Sangia Edition eliminated all our PHP warnings and provided a smooth installation experience. Highly recommended for modern hosting environments."*  
 > — **University Library Administrator**
 
 > *"The zero-warning guarantee and enhanced stability made our journal platform migration seamless. Professional quality work."*  
@@ -133,8 +133,8 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 
 ## 🎉 Ready for Production!
 
-**OJS 2.4.8.5 WizdamID Edition** is ready for production deployment on modern PHP hosting environments. Download now and experience zero-warning OJS installation!
+**OJS 2.4.8.5 Sangia Edition** is ready for production deployment on modern PHP hosting environments. Download now and experience zero-warning OJS installation!
 
-**Made with ❤️ by the WizdamID Team**
+**Made with ❤️ by the Sangia Publishing Team**
 
 *Empowering academic publishing with modern, reliable technology.*
