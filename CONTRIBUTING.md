@@ -1,4 +1,4 @@
-# Contributing to Wizdam Edition
+# Contributing to Sangia Edition
 
 First of all, thank you for contributing!
 
