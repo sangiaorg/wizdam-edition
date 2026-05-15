@@ -12,23 +12,23 @@
 ## 🚀 Quick Download & Installation
 
 ### 📦 Direct Download
-👉 **[Download Latest Release (v1.0.0)](https://github.com/Rochmady/ojs-2485-wizdamid-edition/releases/latest)**
+👉 **[Download Latest Release (v1.0.0)](https://github.com/Rochmady/ojs-2485-sangia-edition/releases/latest)**
 
 ### 🛠️ Installation Steps
-1. **Download** the `ojs-2485-wizdamid-edition.tar.gz` from releases
+1. **Download** the `ojs-2485-sangia-edition.tar.gz` from releases
 2. **Extract** to your web directory:
    ```bash
-   tar -xzf ojs-2485-wizdamid-edition.tar.gz
+   tar -xzf ojs-2485-sangia-edition.tar.gz
    ```
 3. **Set proper permissions:**
    ```bash
-   chmod -R 755 ojs-2485-wizdamid-edition/
-   chmod -R 777 ojs-2485-wizdamid-edition/cache/
-   chmod -R 777 ojs-2485-wizdamid-edition/files/
+   chmod -R 755 ojs-2485-sangia-edition/
+   chmod -R 777 ojs-2485-sangia-edition/cache/
+   chmod -R 777 ojs-2485-sangia-edition/files/
    ```
 4. **Visit installation page:**
    ```
-   http://yourdomain.com/ojs-2485-wizdamid-edition/install
+   http://yourdomain.com/ojs-2485-sangia-edition/install
    ```
 
 ## ✨ Key Features
@@ -118,7 +118,7 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 ## 🙏 Acknowledgments
 
 - **Original OJS Team:** [Public Knowledge Project (PKP)](https://pkp.sfu.ca/) for the foundational Open Journal Systems
-- **WizdamID Development Team:** For PHP 7.4 compatibility enhancements and modern UI improvements
+- **Sangia Development Team:** For PHP 7.4 compatibility enhancements and modern UI improvements
 - **Community Contributors:** For testing, feedback, and continuous improvement
 - **Academic Institutions:** For providing real-world testing environments
 
